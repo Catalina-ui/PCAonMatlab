@@ -1,0 +1,9 @@
+function t = testplot2(data,label)
+    hoge = 1;
+    for i = 1:50000
+        if label(i) == 9 || label(i) == 5
+            t(hoge,:) = data(i,:);
+            hoge = hoge + 1;
+        end
+    end
+end
